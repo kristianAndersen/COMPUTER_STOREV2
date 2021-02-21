@@ -7,6 +7,9 @@ import bankView from './views/bankView.js'
 import bankPresenter from './controllers/bankPresenter.js'
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
     let dataObj={};
     let curlaptop=0;
     const laptoplist = document.getElementById('someList')
@@ -34,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
     //bank
     loanBtn.addEventListener("click", getLoan);
   
+  /**fix github path */
+    let path = " "
+
+    if (window.location.hostname === "kristianandersen.github.io") {
+        path = "/COMPUTER_STOREV2"
+    } else {
+        path = ".."
+    }
+
 
 
 
@@ -54,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //laptop slider
     async function fetchMoviesJSON() {
         try {
-        const response = await fetch('/assets/data/laptop.json');
+        const response = await fetch(path+'/assets/data/laptop.json');
         const data = await response.json();
         return data;
     } catch (e) {
         console.error(e);
     } finally {
-        console.log('We do cleanup here');
+        console.log('all donefetching json');
     }
     }
 
@@ -83,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             datafeat[i].setAttribute('data-feat', feature);
 
             let template = `<div class="item" id="laptop${i}">
-                            <img src="/assets/images/${image}.png" class="imgc">
+                            <img src="${path}/assets/images/${image}.png" class="imgc">
                             <h4 class="itemheading">${name}</h4>
                             <p class="itemdesc">${description}</p>
                             <p>Price:  <span id="laptopPrice">${price}</span> kr.</p>
