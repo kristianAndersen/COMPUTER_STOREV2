@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             datafeat[i].setAttribute('data-feat', feature);
 
             let template = `<div class="item" id="laptop${i}">
-                            <img src="assets/images/${image}.png" class="imgc">
+                            <img src="/assets/images/${image}.png" class="imgc">
                             <h4 class="itemheading">${name}</h4>
                             <p class="itemdesc">${description}</p>
                             <p>Price:  <span id="laptopPrice">${price}</span> kr.</p>
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /**Select a laptop from the dropdown */
     selectLaptop.addEventListener("change", laptopitem, false);
     function laptopitem(e) {
-        let num = e.currentTarget.value;
+        let num = e.currentTarget.value;g
         curlaptop=num;
         setFeatureDesc(num)
     }
