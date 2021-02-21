@@ -37,6 +37,8 @@ class payPresenter{
         this.model.setTotal(this.model.getLoan()+this.model.getBalance())
         this.view.displayLoanUpdate(this.model.getLoan());
         this.view.displayTotalUpdate(this.model.getTotal())
+ 
+      
     }
 
     payOffLoan(Amount){
@@ -44,6 +46,8 @@ class payPresenter{
         this.model.setLoan(Amount); 
         this.view.displayLoanUpdate(this.model.getLoan());
         this.view.displayTotalUpdate(Amount+this.model.getTotal())
+
+
     }
  
 }

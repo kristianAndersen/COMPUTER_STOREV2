@@ -1,6 +1,8 @@
 const bbalance = document.querySelector('#bankbalance');
 const bLoan = document.querySelector('#bankLoan');
 const bTotal = document.querySelector('#bankTotal');
+const rploanBtn = document.getElementById('repayloanbtn');
+
 
 class bankView{
     constructor(){
@@ -22,6 +24,15 @@ class bankView{
     
     displayLoanUpdate(value){
         bLoan.innerHTML=value;
+
+        if(value==0){
+
+            rploanBtn.style="display: none"
+         }else{
+            rploanBtn.style="display: inline"
+         }
+        
+
          
      }
 
@@ -36,7 +47,7 @@ class bankView{
     minusBalance(balance){
         this.presenter.minusBalance(balance);
     }
-    
+
     approveLoan(loanAmount){
         this.presenter.approveLoan(loanAmount);
     }

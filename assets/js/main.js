@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } while (bModel.getLoan() > 0);
 
             }
+            alert("A loane can only be paied in full\n and you need to have an available amount in cash")
 
         }
 
@@ -213,6 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // if all is fine and dandy then process the loan
         if (currentBalance != 0 && promt <= maxLoanLimit) {
+            
             bpresenter.getView().approveLoan(promt)
             return null;
         }
@@ -230,8 +232,16 @@ function buyLaptop() {
     
     if(bModel.getTotal()>=laptopPrice){
 
-        bpresenter.getView().minusBalance(laptopPrice )
-              
+        if(bModel.getLoan()==0){
+            console.log("no loan")
+            bpresenter.getView().minusBalance(laptopPrice )
+        }
+        if(bModel.getLoan()>0){
+            console.log("loan")
+           // bpresenter.getView().minusBalance(laptopPrice )
+            bpresenter.getView().changeBalance((bModel.getTotal()+bModel.getLoan())-laptopPrice)
+        }
+        
         alert("The new "+dataObj[curlaptop].name+" is on its way to you")
       
         return;
