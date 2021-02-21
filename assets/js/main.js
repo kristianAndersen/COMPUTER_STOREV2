@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (window.location.hostname === "kristianandersen.github.io") {
         path = "/COMPUTER_STOREV2"
+        document.getElementsByTagName('header').style.backgroundImage = 'url(' + path + '/assets/images/woooaaa.gif.)';
     } else {
         path = ".."
     }
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /**Select a laptop from the dropdown */
     selectLaptop.addEventListener("change", laptopitem, false);
     function laptopitem(e) {
-        let num = e.currentTarget.value;g
+        let num = e.currentTarget.value;
         curlaptop=num;
         setFeatureDesc(num)
     }
