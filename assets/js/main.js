@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                  
                     
                 } while (bModel.getLoan() > 0);
-
+                return;
             }
             alert("A loane can only be paied in full\n and you need to have an available amount in cash")
 
