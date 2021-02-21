@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //bank
     const loanBtn = document.getElementById('loanbtn');
 
+    const thehead =document.getElementById('thehead');
     //   
     buyit.addEventListener('click', buyLaptop, false)
 
@@ -42,10 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (window.location.hostname === "kristianandersen.github.io") {
         path = "/COMPUTER_STOREV2"
-        document.getElementsByTagName('header').style.backgroundImage = 'url(' + path + '/assets/images/woooaaa.gif.)';
+        thehead.style.backgroundImage = 'url(' + path + '/assets/images/woooaaa.gif.)';
+
     } else {
-        path = ".."
+        path = ""
     }
+
 
 
 
