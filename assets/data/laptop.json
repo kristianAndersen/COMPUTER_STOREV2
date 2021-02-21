@@ -1,0 +1,32 @@
+[{
+    "id":0,
+    "name":"L340",
+    "feature":"Awesome you can check email",
+    "description":"some cool description",
+    "price":"3500",
+    "image":"Ideapad-Gaming-L340"
+},
+{
+    "id":1,
+    "name":"ideapad-3",
+    "feature":"some feature",
+    "description":"some cool description",
+    "price":"2900",
+    "image":"lenovo-ideapad-3"
+},
+{
+    "id":2,
+    "name":"ideapad-3",
+    "feature":"It has a nice screen saver",
+    "description":"some cool description",
+    "price":"1500",
+    "image":"lenovo-ideapad-s145"
+},
+{
+    "id":3,
+    "name":"l340-15",
+    "feature":"It is quite bendy",
+    "description":"some cool description",
+    "price":"500",
+    "image":"lenovo-ideapad-l340-15"
+}]

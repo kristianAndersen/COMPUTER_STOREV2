@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --headertxtcolor: rgba(255, 255, 255, 0.877);
+    --spbackground: rgba(139, 142, 155, 0.5);
+
+    --loanbtn: rgb(18, 196, 86);
+    --rploanbtn: rgba(65, 63, 87, 0.952);
+    --bankbtn: rgba(235, 231, 23, 0.918);
+    --workbtn: rgba(23, 108, 235, 0.918);
+    --buybtn: rgba(102, 161, 250, 0.918);
+
+}
+
+html,
+body {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-display: swap;
+    background-color: #b7b8c5;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1rem;
+    font-size: calc(1.2em + 2vw);
+
+
+}
+
+p {
+    font-size: calc(1em + 0.2vw);
+    font-family: 'Open Sans';
+}
+
+select,
+button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    width: 40%;
+    z-index: 100;
+
+}
+.divider {
+    position: relative;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 0.01rem;
+    top: -0.2rem;
+    color: inherit;
+    background-color: #b7b8c5;
+    border: 0;
+    opacity: .25;
+    display: block;
+
+}
+
+header {
+    width: 100vw;
+    height: 25vh;
+    background-image: url('/assets/images/woooaaa.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--headertxtcolor);
+    text-align: center;
+    position: relative;
+
+}
+
+main {
+    padding: 0.2rem;
+}
+
+
+.row::before,
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.one,
+.one-third {
+    width: 100%;
+    border: 0.1rem solid var(--spbackground);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+
+.column {
+    padding: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.sectionpart {
+    height: 25vh;
+    padding: 1rem;
+    background-color: var(--spbackground);
+}
+
+.one {
+    height: 34vh;
+}
+
+
+
+header h1 {
+    padding-top: 4rem;
+    text-shadow: rgb(15, 15, 15) 1rem 0 1rem;
+}
+
+
+.one-third h3 {
+    color: #b7b8c5;
+    text-align: left;
+    text-shadow: rgba(15, 15, 15, 0.432) -0.1rem 0 0.2rem;
+    position: relative;
+   
+}
+
+
+
+.one-third >button p {
+    text-align: center;
+    top: 0rem;
+}
+
+.one-third button {
+    position: relative;
+    float: right;
+    top: -2.5rem;
+
+}
+.bank> button {
+    position: relative;
+    display: block;
+    width: 33%;
+    margin: 0.1rem;
+    top: -0.2rem;
+    margin-top: 0.2rem;
+    float: left;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 10%;
+}
+
+.bank> p{
+    position: relative;
+    float: left;
+    text-align: center;
+    display: block;
+    width: 100%;
+    
+}
+
+.work > button {
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    margin: 0.1rem;
+    top: -0.2rem;
+    margin-top: 0.2rem;
+
+
+}
+.work>#repayloanbtn{
+    display: none;
+}
+.work>p{
+    padding-top: 3rem;
+}
+
+
+.one h3 {
+    color: #b7b8c5;
+    text-align: left;
+    text-shadow: rgba(15, 15, 15, 0.432) -0.1rem 0 0.2rem;
+    position: relative;
+   
+}
+.ltprice{
+text-align: center;
+}
+
+
+.one >button p {
+    text-align: center;
+    top: 0rem;
+}
+
+.one button {
+    position: relative;
+    float: right;
+    top: -2.5rem;
+
+}
+
+#laptops {
+    position: relative;
+    float: right;
+    clear: both;
+    top: 0.5rem;
+}
+
+#features {
+    position: relative;
+    float: left;
+    clear: both;
+    top: 0.5rem;
+}
+
+#someList {
+    display: inline-block;
+    width: 100%;
+    height: 100;
+   /* overflow-x: scroll;*/
+   overflow: hidden;
+    white-space: nowrap;
+    clear: both;
+
+}
+
+
+#someList>.item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+#someList>.item>.imgc {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 0.5rem;
+}
+
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--spbackground);
+    text-align: center;
+}
+
+.ftext{
+    padding-top: 0.5rem;;
+    font-size:calc(0.5em + 0.2vw);
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 30vh;
+        background-position: 0 -10rem;
+
+    }
+
+    .one {
+        margin-left: 0.8rem;
+        margin-right: -0.5rem;
+        width: calc(100%/1.025);
+    }
+
+    .one-third {
+        margin-left: 0.8rem;
+        margin-right: -0.5rem;
+        width: calc(100% / 3.1);
+    }
+
+    .column {
+        float: left;
+    }
+
+    .one-third button {
+        position: relative;
+       
+
+    }
+
+    .work>#bankbtn, #workbtn {
+        top: 0rem;
+        margin-top: 0.2rem;
+        display: inline-block;
+
+    }
+    .work>#repayloanbtn{
+        top: 0rem;
+        margin-top: 0.2rem;
+        display: none;
+        
+    }
+    #someList {
+        position: relative;
+        top: -2rem;
+        display: inline-block;
+        height: 80%;
+        width: 100%;
+       
+ 
+    }
+
+    #someList>.item {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    
+    }
+    
+    #someList>.item>.imgc {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: auto;
+        float: left;
+        padding: 0.5rem;
+    }
+    
+  
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+}
+
